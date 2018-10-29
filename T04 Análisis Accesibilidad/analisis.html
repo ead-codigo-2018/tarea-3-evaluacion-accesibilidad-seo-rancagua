@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Análisis Sitio Web - Tarea 04</title>
+    <link rel="stylesheet" href="css/analisis.css"> <!--Link a Carpeta con Estilos (CSS)-->
+  </head>
+
+  <body>
+
+  <header>
+      <h1> Sitio Web Municipalidad de Rancagua </h1>
+
+      <section>
+      <h2>Datos Generales</h2>
+      <p>Integrantes: Bastián Rubio, Daniel Fernández, Antonia Escudero, Catalina Cea
+      <br>
+      Asignatura: Diseño desde el Código 2018
+      </p>
+      </section>
+  
+      <section>
+      <h2> INTRODUCCIÓN </h2>
+  
+     <p>En el marco de aprendizaje a cerca de Accesibilidad en sitios web, se realiza el 
+       ejercicio de revisar el sitio web de la Municipalidad de Rancagua según las Pautas de 
+       Accesibilidad, el sitio WAVE y el Validador de Códigos de W3. </p>
+       <br>
+      </section>
+  </header>
+
+<main>
+    <section>
+        <h2> DESARROLLO </h2>
+     
+        <!-- Primer Sitio -->
+        
+       <h3> N°1: Sitio Principal </h3>
+       <article>
+       <p> El primer sitio a tratar, es la página principal
+         de la <a href="https://rancagua.cl/"> Municipalidad de Rancagua</a> </p>
+       
+       <h4> VISTA DE DISEÑO </h4>
+       <br>
+       <img src="img/informepaginarancagua01.png" alt="Vista desde el Diseño - Primer Sitio">
+       <br>
+       <h5>Aspectos Negativos</h5>
+       <ul>
+         <li> El audio es incorporado de manera efectiva, hace referencia a la información 
+           principal, pero esta no tiene opción de cerrado. </li>
+         <li> Existen botones informativos con distintos tamaños y  posiciones. Algunos llegan a 
+           estar pixelados (no tienen la misma resolución). </li>
+     
+         <li> Una de las redirecciones de las páginas de la parte izquierda, no se encuentra vigente 
+           <a href="http://www.eodmachalirancagua.cl/"> http://www.eodmachalirancagua.cl/ </a> </li>
+     
+         <li> No se aprovecha de buena manera la sección de redes sociales, en específico la de
+           facebook. Podrían tener un  tamaño más acotado. </li>
+     
+         <li> La sección de central de llamado tiene una redirección sin uso.
+           “Central telefónica”. </li>
+     
+         <li> No hay una ley clara en la iconografía que se utiliza. </li>
+     
+         <li> No existe un “seguimiento” del recorrido del usuario. </li>
+     
+         <li> Si bien se puede recorrer el sitio con el tabulador, uno no se
+           puede devolver y en sí es muy lento de recorrer. En particular la sección
+           de noticias de twitter, donde se queda pegado avanzando en el scroll hasta
+           que termina la sección. También esto sucede en la sección de los slides. </li>
+     
+         <li> Continuando con el scroll de twitter, su tamaño es desproporcionado en relación
+           a las demás cajas que contienen las otras redes sociales. </li>
+     
+      </ul>
+     
+       <h5>Aspectos Positivos</h5>
+       <ul>
+         <li> Un aspecto positivo es la presencia del botón “Home” pese a que el link del logo 
+           también redireccione a la página principal. </li>
+         <li> Es responsive. </li>
+         <li> La versión para móvil tiene mejor distribuída la zona previa al Footer. </li>
+         <li> Existe un menú que se mantiene constante cuando uno explora las demás secciones. </li>
+         <li> Se puede manejar por teclado (Tab). </li>
+       </ul>
+       </article>
+     </section>
+     
+     <section>
+       <h4> VALIDACIÓN POR WAVE </h4>
+       <ul>
+         <li> <strong> 73 Errors </strong> </li>
+         <li> <strong> 27 Alerts </strong> </li>
+         <li> <strong> 6 Features </strong> </li>
+         <li> <strong> 46 Structural Elements </strong> </li>
+         <li> <strong> 188 HTML5 and ARIA </strong> </li>
+         <li> <strong> 34 Contrast Errors </strong> </li>
+       </ul>
+     
+     <!-- Detalle -->
+     
+       <ul>
+         <li> <strong> De los 73 errores: </strong>
+     
+         <ul>
+         <li> 4 de ellos corresponden a imágenes sin link que no tienen texto alternativo. </li>
+         <li> 61 errores corresponden a imágenes que si tienen vinculado un link, pero que tampoco 
+           poseen texto alternativo. </li>
+         <li> 2 son links que no presentan un texto (Icono Home) </li>
+         <li> 6 errores ARIA </li>
+       </ul>
+     <br>
+       </li>
+         <li> <strong> 27 Alertas: </strong>
+           <ul>
+             <li> Pasa del h1 al h5, debería existir sólo un h1. Además el h5 podría ser  
+             reemplazado por un párrafo "p". </li>
+             <li> Links redundantes que llevan a la misma página, pero sólo 2 veces, 
+               lo cual no está mal. </li>
+             <li> Debería de avisar que el link lleva a un pdf. </li>
+           </ul>
+         </li>
+
+         <li> <strong> Elementos Estructurales: </strong>
+     
+           <ul>
+             <li> 9 h1 (debería existir 1). </li>
+             <li> 13 h4 (esto está bien) </li>
+           </ul>
+         </li>
+
+         <li> <strong> HTML5 and Aria: </strong>
+           <ul>
+             <li> 1 Navegación </li>
+             <li> 64 de ARIA </li>
+             <li> 29 ARIA label or description </li>
+             <li> 94 ARIA tabindex </li>
+           </ul>
+         </li>
+        </ul>
+       </section>
+     
+     <section>
+        <h4> PAUTAS DE ACCESIBILIDAD PARA EL CONTENIDO WEB (WCAG) 2.0 </h4>
+        <h5> Principio 1: Perceptible </h5>
+     
+        <p> <strong> Pauta 1.1: Contenido no Textual </strong> </p>
+
+        <img src="img/informepaginarancagua02.png" alt="Pauta 1 - Sitio 1">
+        <img src="img/informepaginarancagua03.png" alt="Pauta 1.2 - Sitio 1">
+
+        <p> Las imágenes no tienen texto alternativo (tanto las que poseen link, 
+          como las que no). Las imágenes son principalmente íconos y imágenes 
+          que intentan ser botones, pero parecen banners. </p>
+     
+        <p> <strong> Pauta 1.2: Medios Tempodependientes </strong> </p>
+     
+        <p> Cuando se ingresa al sitio principal aparece un audio que no puede 
+          pararse cuando uno quiera (se recurre a silenciar la pestaña). 
+          El contenido del audio no está actualizado y tampoco presenta una versión 
+          escrita visible para el usuario. </p>
+     
+       <p> <strong> Pauta 1.3: Adaptable </strong> </p>
+     
+       <p> El contenido auditivo es limitado a un anuncio/información, más no se utiliza 
+         como medio para incluir a gente no vidente.
+         El sitio es responsive, por lo tanto sus elementos son flexibles al cambiar de 
+         dispositivo. </p>
+     
+      <p> <strong> Pauta 1.4: Distinguible </strong> </p>
+     
+      <p> El color del sitio es contrastante (Anaranjado-Celeste-Blanco) para alguien sin  problemas de visión.
+        Sin embargo el sitio no da una opción para contrastar más los colores (contraste  mejorado), ni tampoco
+        se preocupa de la gente daltónica.
+        Tiene un audio al inicio que dura más de 3 segundos, tiene un buen volumen, pero  no se puede poner
+        pausa de ninguna forma. Además otro problema es que el audio tiene un sonido de fondo que causa confusión
+        a gente con problemas auditivos. </p>
+     
+        <h5> Principio 2: Operable </h5>
+        <img src="img/informepaginarancagua04.png" alt="Pauta 2 - Sitio 1">
+        <p> <strong> Pauta 2.1: Accesible por Teclado </strong> </p>
+     
+        <p> Se puede recorrer el sitio a través del teclado (Tabulador), pero una vez se llega a 
+          la zona de redes sociales (antes del footer) se vuelve todo mucho más lento <br>
+          de recorrer (Twitter). </p>
+     
+        <p> <strong> Pauta 2.2: Tiempo Suficiente </strong> </p>
+     
+        <p> Existen dos visualizaciones de slides que cambian automáticamente, el primero 
+          no cumple con el tiempo requerido para personas con capacidades diferentes, ya que 
+          éste dura 2 segundos en cambiar a la siguiente imagen. El segundo slide tampoco, ya 
+          que dura 4. Pero si tiene la opción para detenerse (mouse, pero no teclado). </p>
+     
+        <p> <strong> Pauta 2.3: Convulsiones </strong> </p>
+     
+         <p> No presenta problemas en este ámbito. </p>
+     
+       <p> <strong> Pauta 2.4: Navegable </strong> </p>
+     
+        <p> El sitio presenta una coherencia en el propósito de los textos y su link.
+         Existen títulos para cada sección dentro del sitio, pero no hay una muestra del recorrido 
+         que hizo el usuario, no hay como saber la ubicación.
+         Hay algunos slides en los que no se puede volver atrás con la flechita del navegador. </p>
+     
+       <h5> Principio 3: Comprensible </h5>
+       <img src="img/informepaginarancagua05.png" alt="Pauta 3 - Sitio 1">
+        <p> <strong> Pauta 3.1: Legible </strong> </p>
+     
+        <p> No presenta mayores problemas. </p>
+     
+        <p> <strong> Pauta 3.2: Predecible </strong> </p>
+     
+        <p> No presenta mayores problemas.
+         Salvo las imágenes que intentan ser botones, ya que entre sí no tienen una coherencia en
+         cuanto a tamaños y resolución. </p>
+     
+       <p> <strong> Pauta 3.3: Entrada de datos asistida </strong> </p>
+     
+        <p> No aplica. </p>
+     
+       <h5> Principio 4: Robusto </h5>
+     
+       <p> <strong> Pauta 4.1: Compatible </strong> </p>
+       <img src="img/informepaginarancagua06.png" alt="Pauta 4 - Sitio 1">
+         <ul>
+            <li> <strong>51 errores según Validador de HTML:</strong></li>
+           <li> Atributo alt (sin texto alternativo en imágenes) (x30) </li>
+           <li> Atributo type es innecesario en recursos de Javascript (x5) </li>
+           <li> Atributo border está obsoleto (ese atributo se pone en CSS no en HTML) </li>
+         </ul>
+     </section>
+     
+       <!-- Segundo Sitio -->
+     
+     <section>
+       <h3> N°2: Sitio Juegos Regionales de Inclusión 2018 </h3>
+       <p> <a href="https://servicios.rancagua.cl/actividades/2018-juegos-regionales-de-inclusion/">
+         https://servicios.rancagua.cl/actividades/2018-juegos-regionales-de-inclusion/ </a> </p>
+       </section>
+     
+       <section>
+         <h4> VALIDACIÓN POR WAVE </h4>
+      
+         <ul>
+           <li> <strong> 1 Error </strong> </li>
+           <li> <strong> 1 Alert </strong> </li>
+           <li> <strong> 2 Features </strong> </li>
+           <li> <strong> 3 Structural Elements </strong> </li>
+           <li> <strong> 1 HTML5 and ARIA </strong> </li>
+           <li> <strong> 2 Contrast Errors </strong> </li>
+         </ul>
+      
+        <p> El error es que el logo no tiene texto alternativo.
+         La alerta es porque tiene el link de inicio redundante: en el título y en el 
+          “Inicio” (pero no lo consideramos error) </p>
+         </section>
+     
+       <section>
+          <h4> PAUTAS DE ACCESIBILIDAD PARA EL CONTENIDO WEB (WCAG) 2.0 </h4>
+          <h5> Principio 1: Perceptible </h5>
+          <img src="img/informepaginarancagua07.png" alt="Pauta 1 - Sitio 2">
+          <p> <strong> Pauta 1.1: Contenido no Textual </strong> </p>
+      
+          <p> Sólo una de las imágenes no tienen texto alternativo. </p>
+      
+          <p> <strong> Pauta 1.2: Medios Tempodependientes </strong> </p>
+      
+          <p> No aplica. </p>
+      
+          <p> <strong> Pauta 1.3: Adaptable </strong> </p>
+      
+          <p> No tiene elementos de audio.
+      El sitio es responsive, por lo tanto sus elementos son flexibles al cambiar de dispositivo. 
+       </p>
+      
+          <p> <strong> Pauta 1.4: Distinguible </strong> </p>
+      
+          <p> El color del sitio es contrastante (Anaranjado-Celeste-Blanco) para alguien 
+            sin problemas de visión. El sitio no da una opción para contrastar más los colores
+            (contraste mejorado), ni tampoco se preocupa de la gente daltónica. </p>
+      
+          <h5> Principio 2: Operable </h5>
+          <img src="img/informepaginarancagua08.png" alt="Pauta 2 - Sitio 2">
+          <p> <strong> Pauta 2.1: Accesible por Teclado </strong> </p>
+      
+          <p> Se puede recorrer el sitio a través del teclado (Tabulador). </p>
+      
+          <p> <strong> Pauta 2.2: Tiempo Suficiente </strong> </p>
+      
+          <p> No aplica </p>
+      
+          <p> <strong> Pauta 2.3: Convulsiones </strong> </p>
+      
+          <p> No aplica </p>
+      
+          <p> <strong> Pauta 2.4: Navegable </strong> </p>
+      
+          <p> El sitio presenta una coherencia en el propósito de los textos y su link. 
+      Las sub-secciones no tienen título.
+       </p>
+      
+          <h5> Principio 3: Comprensible </h5>
+          <img src="img/informepaginarancagua09.png" alt="Pauta 3 - Sitio 2">
+          <p> <strong> Pauta 3.1: Legible </strong> </p>
+      
+          <p> La tipografía podría ser un poco más grande.
+      El logo también podría aumentar su tamaño.
+       </p>
+      
+          <p> <strong> Pauta 3.2: Predecible </strong> </p>
+      
+          <p> No presenta mayores problemas. </p>
+      
+          <p> <strong> Pauta 3.3: Entrada de datos asistida </strong> </p>
+      
+          <p> No aplica. </p>
+      
+          <h5> Principio 4: Robusto </h5>
+      
+          <p> <strong> Pauta 4.1: Compatible </strong> </p>
+      
+          <p> 6 errores + 1 alerta
+      Uno de los errores está ubicado en el “meta charset”
+       </p>
+     </section>
+     
+      <!-- Tercer Sitio -->
+     
+     <section>
+      <h3> N°3: Sitio Plan Regulador Comunal </h3>
+      <p> <a href="https://rancagua.cl/index.php/plan-regulador-comunal">
+        https://rancagua.cl/index.php/plan-regulador-comunal </a> </p>
+       </section>
+     <section>
+        <h4> VALIDACIÓN POR WAVE </h4>
+      
+        <ul>
+          <li> <strong> 44 Errors </strong> </li>
+          <li> <strong> 52 Alerts </strong> </li>
+          <li> <strong> 1 Features </strong> </li>
+          <li> <strong> 50 Structural Elements </strong> </li>
+          <li> <strong> 41 HTML5 and ARIA </strong> </li>
+          <li> <strong> 34 Contrast Errors </strong> </li>
+        </ul>
+      
+        <!-- Detalle -->
+      
+        <ul>
+          <li> <strong> De los 44 errores: </strong>
+          <li> 4 de los errores corresponden a que no existe texto alternativo para imágenes. </li>
+          <li> 31 errores se refieren a que no existe nuevamente un texto alternativo,
+            pero esta vez referido a imágenes con links.  </li>
+          <li> El sitio no tiene un título </li>
+          <li> 2 Links que no presentan texto (ícono home) </li>
+          <li> 6 errores ARIA (etiqueta) </li>
+        </ul>
+
+        <ul>
+          <li> <strong> 52 Alertas: </strong>
+              <li> No sigue el orden estructural de los títulos: se saltan al h4, 
+                 pero no es un mayor problema </li>
+              <li> Un link redundante (x2) </li>
+              <li> 12 links que llevarían a archivos power point, pero sólo son 
+                visibles en el html. </li>
+              <li> 38 links que llevan a archivos pdf, no avisados al usuario. </li>
+            </ul>
+      
+          <ul> 
+            <li><strong> Elementos Estructurales: </strong> </li>
+          <li> El h1 está bien puesto y es sólo 1. </li>
+        </ul>
+       </section>
+
+     <section>
+         <h4> PAUTAS DE ACCESIBILIDAD PARA EL CONTENIDO WEB (WCAG) 2.0 </h4>
+         <h5> Principio 1: Perceptible </h5>
+         <img src="img/informepaginarancagua10.png" alt="Pauta 1 - Sitio 3">
+         <p> <strong> Pauta 1.1: Contenido no Textual </strong> </p>
+      
+         <p> Las imágenes no tienen texto alternativo (tanto las que poseen link, <br>
+           como las que no). Las imágenes son principalmente íconos y imágenes que <br>
+           intentan ser botones, pero parecen banners. </p>
+      
+         <p> <strong> Pauta 1.2: Medios Tempodependientes </strong> </p>
+      
+         <p> No aplica. </p>
+      
+         <p> <strong> Pauta 1.3: Adaptable </strong> </p>
+      
+         <p> No tiene elementos de audio. El sitio es responsive, por lo tanto sus <br>
+           elementos son flexibles al cambiar de dispositivo.
+       </p>
+      
+         <p> <strong> Pauta 1.4: Distinguible </strong> </p>
+      
+      <ul>
+        <li> El color del sitio es contrastante (Anaranjado-Celeste-Blanco) para alguien <br>
+            sin problemas de visión. El sitio no da una opción para contrastar más los colores <br>
+            (contraste mejorado), ni tampoco se preocupa de la gente daltónica. </li>
+        <li> Presenta link de jpg y archivos en pdf, pero se encuentran ya trazados <br>
+            como elemento seleccionado (Subrayado). Su contraste es menor al momento <br>
+            de pasar el mouse por encima de ellos. </li>
+         <li> Tonos plomo más opaco  a un plomo menos. </li>
+       </ul>
+      
+         <h5> Principio 2: Operable </h5>
+         <img src="img/informepaginarancagua11.png" alt="Pauta 2 - Sitio 3">
+         <p> <strong> Pauta 2.1: Accesible por Teclado </strong> </p>
+      
+         <p> Se puede recorrer el sitio a través del teclado (Tabulador) <br>
+         Pero en el sector de la redes sociales en especial twitter, la bajada <br>
+         con el tabulador recorre todas las noticias puestas.
+       </p>
+      
+         <p> <strong> Pauta 2.2: Tiempo Suficiente </strong> </p>
+      
+         <p> Al momento presionar el link de una imagen jpg, la duración de la <br>
+           carga sobrepasa los 10 segundos. (igual se piensa que son planos y la <br>
+           información necesaria solicita a una buena resolución) </p>
+      
+         <p> <strong> Pauta 2.3: Convulsiones </strong> </p>
+      
+         <p> No aplica. </p>
+      
+         <p> <strong> Pauta 2.4: Navegable </strong> </p>
+      
+         <p> El sitio presenta una coherencia en el propósito de los textos y su link, <br>
+           salvo los textos que llevan a archivos pdf y jpg, ya que no avisan al usuario. <br>
+           Las sub-secciones tienen título y tiene un botón extra para regresar al inicio.
+       </p>
+      
+         <h5> Principio 3: Comprensible </h5>
+         <img src="img/informepaginarancagua12.png" alt="Pauta 3 - Sitio 3">
+         <p> <strong> Pauta 3.1: Legible </strong> </p>
+      
+         <p> Podría mejorar el orden. </p>
+      
+         <p> <strong> Pauta 3.2: Predecible </strong> </p>
+      
+         <p> No presenta mayores problemas. </p>
+      
+         <p> <strong> Pauta 3.3: Entrada de datos asistida </strong> </p>
+      
+         <p> No aplica. </p>
+      
+         <h5> Principio 4: Robusto </h5>
+         <img src="img/informepaginarancagua13.png" alt="Pauta 4 - Sitio 3">
+         <p> <strong> Pauta 4.1: Compatible </strong> </p>
+      
+         <p> 43 errores + 5 alertas </p>
+      
+          <p> <strong> Errores: </strong> </p>
+      
+           <ul>
+           <li> No hay título en el header. </li>
+           <li> No hay texto alternativo para las imágenes. </li>
+           <li> Problemas con CSS porque ocupa "br" </li>
+           <li> El elemento “frameborder” es un elemento que se encuentra obsoleto, <br>
+             actualmente se usa CSS en vez de eso. </li>
+           <li>El atributo ARIA-controls debe apuntar a un elemento en el mismo documento. </li>
+         </ul>
+         <p> <strong> Alertas: </strong> </p>
+      
+          <p> El atributo type es innecesario para Javascript. </p>
+         </section>
+     
+        <!-- Cuarto Sitio -->
+     
+      <section>
+        <h3> N°4: Sitio Rancagua Cultura </h3>
+        <p> <a href="http://www.rancaguacultura.cl/"> http://www.rancaguacultura.cl/ </a> </p>
+       </section>
+     <section>
+        <h4> VALIDACIÓN POR WAVE </h4>
+      
+        <ul>
+          <li> <strong> 71 Errors </strong> </li>
+          <li> <strong> 129 Alerts </strong> </li>
+          <li> <strong> 17 Features </strong> </li>
+          <li> <strong> 56 Structural Elements </strong> </li>
+          <li> <strong> 135 HTML5 and ARIA </strong> </li>
+          <li> <strong> 147 Contrast Errors </strong> </li>
+        </ul>
+      
+        <!-- Detalle -->
+      
+        <ul>
+          <li> <strong> De los 71 errores: </strong>
+          <li> 5 de los errores corresponden a la falta de texto alternativo en imágenes. </li>
+          <li> Un control de formulario no tiene la etiqueta correspondiente. </li>
+          <li> 5 botones vacíos, sin texto. </li>
+          <li> 51 links no contienen texto. </li>
+          <li> Referencia Aria rota (x9). </li>
+        </ul>
+      
+        <ul>
+          <li> <strong> 129 Alertas: </strong>
+              <li> Se salta niveles de título 2 veces </li>
+              <li> Hay textos que parecen ser encabezados pero no funciona como tal <br>
+                dentro del código (Octubre 2018) </li>
+              <li> 4 links redundantes (no son errores propiamente tal). </li>
+              <li> Un elemento "noscript" presente </li>
+              <li> Hay 116 títulos redundantes. </li>
+            </ul>
+
+       </section>
+
+     <section>
+        <h4> PAUTAS DE ACCESIBILIDAD PARA EL CONTENIDO WEB (WCAG) 2.0 </h4>
+        <h5> Principio 1: Perceptible </h5>
+        <img src="img/informepaginarancagua14.png" alt="Pauta 1 - Sitio 4">
+        <img src="img/informepaginarancagua15.png" alt="Pauta 1.1 - Sitio 4">
+        <p> <strong> Pauta 1.1: Contenido no Textual </strong> </p>
+      
+        <p> Las imágenes no tienen texto alternativo. El error es encontrado en la parte del 
+      slider principal, el cual contiene 5 problemas de este tipo.
+       </p>
+      
+        <p> <strong> Pauta 1.2: Medios Tempodependientes </strong> </p>
+      
+        <p> No aplica. </p>
+      
+        <p> <strong> Pauta 1.3: Adaptable </strong> </p>
+      
+        <p> No tiene elementos de audio.
+      El sitio es responsive, por lo tanto sus elementos son flexibles al cambiar 
+      de dispositivo. Pero algunas sectores quedan desproporcionadas respecto a otras 
+      previo al responsive.
+       </p>
+      
+        <p> <strong> Pauta 1.4: Distinguible </strong> </p>
+      
+      <ul>
+        <li> El color del sitio es contrastante (Anaranjado-Celeste-Blanco) y en algunos 
+           botones (Fucsia, Amarillos y Celestes) para alguien sin problemas de visión. </li>
+        <li> El sitio no da una opción para contrastar más los colores (contraste mejorado), 
+           ni tampoco se preocupa de la gente daltónica. </li>
+        <li> En el sector de noticias las grillas no se encuentran encuadradas bajo una 
+          misma ley, por lo tanto existen algunas con mayor altura que otras. </li>
+        <li> Sector de Instagram (“Instagram”), las imágenes quedan como un collage que no 
+          es posible percibir cuál es el propósito de tal espacio. Éstas al parecer no 
+          vienen de instagram, sino que funcionan como una galería. </li>
+      </ul>
+      
+        <h5> Principio 2: Operable </h5>
+        <img src="img/informepaginarancagua16.png" alt="Pauta 2 - Sitio 4">
+        <p> <strong> Pauta 2.1: Accesible por Teclado </strong> </p>
+      
+        <p> No se puede recorrer el sitio a través del teclado (Tabulador). 
+         Baja automáticamente a la parte inferior de la página
+       </p>
+      
+        <p> <strong> Pauta 2.2: Tiempo Suficiente </strong> </p>
+      
+        <p> En el sector de “Latest Post” el cambio automático tiene dos errores, 
+          lo primero no cumple con el tiempo requerido para personas con capacidades 
+          diferentes, ya que éste dura 7 segundos en cambiar a la siguiente imagen. 
+          El segundo se puede detener con el mouse, pero no con el teclado. </p>
+      
+        <p> <strong> Pauta 2.3: Convulsiones </strong> </p>
+      
+        <p> No aplica. </p>
+      
+        <p> <strong> Pauta 2.4: Navegable </strong> </p>
+      
+        <p> <strong> General: </strong> </p>
+      
+         <p> El sitio es navegable pero en general el uso de imágenes con movimientos 
+            (Gifs) reiterativo genera molestia al modo de visualizar la página. </p>
+      
+         <p> <strong> Superior: </strong> </p>
+      
+         <p> Bajo los recuadros de opciones rápidas, se encuentra una sub sección de 
+           noticias pasa desapercibido a la página en general. </p>
+      
+         <p> <strong> Inferior: </strong> </p>
+      
+         <p> Previo al footer la cantidad de información y sub-secciones quedan amontonadas 
+           tanto en su gráfica e información además que se reiteran 3 veces las redes sociales de la página. </p>
+      
+      
+        <h5> Principio 3: Comprensible </h5>
+        <img src="img/informepaginarancagua17.png" alt="Pauta 3 - Sitio 4">
+        <p> <strong> Pauta 3.1: Legible </strong> </p>
+      
+      <ul>
+      <li> Podría mejorar el orden, específicamente el footer. </li>
+      <li> Jerarquías en los ptos. de las tipografías, creando un orden de lectura ambiguo. </li>
+      <li> Hay tres secciones de noticias, dos de ellas son poco visibles. </li>
+      <li> El orden general de la página no es claro en cuanto a prioridades (Calendario vs Noticias) </li>
+      <li> Hay dos menús, el normal y el responsive, este último no debiese estar si no <br>
+      se está adaptando a un tamaño menor. </li>
+      </ul>
+
+      <p> Palabras e informaciones esenciales se encuentran en Inglés y no tienen traducción incluida. </p>
+      
+      
+        <p> <strong> Pauta 3.2: Predecible </strong> </p>
+      
+        <p> El sector de Instagram no es predecible, no se entiende su propósito, si <br>
+          es una página enlazada o solo una imagen clickeable  </p>
+      
+        <p> <strong> Pauta 3.3: Entrada de datos asistida </strong> </p>
+      
+        <p> No aplica. </p>
+      
+        <h5> Principio 4: Robusto </h5>
+        <img src="img/informepaginarancagua18.png" alt="Pauta 4 - Sitio 4">
+        <p> <strong> Pauta 4.1: Compatible </strong> </p>
+      
+        <p> Entre errores y alertas hay 390 encontrados con el validador (W3): </p>
+      
+      <p> <strong> Errores: </strong> </p>
+      
+      <ul>
+      <li> Error de análisis en CSS ( { ) </li>
+      <li> Problema con “Stray end tag” "meta"  Que cierra el el código como meta pero no como stay. </li>
+      <li> Elemento "item" no es permitido como elemento secundario de "div" </li>
+      <li> Hay elementos con la etiqueta "p" que no se encuentran cerradas </li>
+      <li> Elemento ancla que no están cerrados </li>
+      <li> Imágenes sin atributo "alt" </li>
+      <li> Hay un valor incorrecto en el elemento "href" en el elemento "a" </li>
+      <li> Hay espacios entre los atributos </li>
+      <li> Atributo duplicado de palabras “de” </li>
+      </ul>
+      <p> <strong> Alertas: </strong> </p>
+
+      <ul>
+      <li> El atributo "type" no es necesario para los recursos javascript. </li>
+      <li> El atributo 2, 3, otoño, … no es serializable como XML 1.0 </li>
+      </ul>
+
+     </section>
+</main>
+  </body>
+</html>

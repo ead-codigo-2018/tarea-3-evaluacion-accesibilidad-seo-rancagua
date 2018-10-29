@@ -1,0 +1,78 @@
+/*-----------------------------CSS-----------------------------*/
+
+.main-conteiner {
+  display: flex;
+  width: 1200px
+}
+
+.clear {
+  clear: both;
+}
+
+
+/*-----Header------*/
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+header{
+  margin-right: 0%;
+  margin-left: 5%;
+}
+
+header h1{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 30px;
+}
+
+header h2{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+p {
+  font-size: 15px;
+  margin-right: 10%;
+}
+
+/*----------------------MAIN----------------------*/
+
+main section {
+  letter-spacing: 1px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+main section h2 {
+  font-size: 20px;
+}
+
+main section h3 {
+  font-size: 20px;
+  background-color: #3a3a3a;
+  color: white;
+  margin-right: 40%;
+}
+
+main section h4 {
+  font-size: 15px;
+  background-color: #b5b5b5;
+  margin-right: 40%;
+}
+
+main ul{
+  font-size: 15px;
+  margin-right: 42%;
+}
+
+img{
+  width: 1000px;
+  
+}
